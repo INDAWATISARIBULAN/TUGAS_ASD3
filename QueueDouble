@@ -1,0 +1,51 @@
+package TUGAS_ASD3;
+
+
+
+import java.util.ArrayList;
+
+
+
+public class QueueDouble {
+
+	ArrayList<Double> kelase = new ArrayList<Double>();
+
+	int inda = -1;
+
+
+
+	public void insert(Double value) {
+
+		inda++;
+
+		kelase.add(inda,value);
+
+	}
+
+	public Double get() {
+
+		Double value = 0.1;
+
+		if(inda>-1) {
+
+			value = kelase.get(0);
+
+			kelase.remove(0);
+
+			inda--;
+
+		}
+
+		return value;
+
+		
+
+	}
+
+	public void cetak() {
+
+		System.out.println("ECOR : "+ismail+" > VARIABLE: "+kelase.toString());
+
+	}
+
+}
